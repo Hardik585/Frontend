@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="3" cellpadding="10" cellspacing="100" rules="all" width="500" height="50">
+        <!-- cellpadding="10" it add space or padding around the border and the content include table header part -->
+        <!-- cellspacing="10"  it add space around the cell ,  not working  if rules attribute is use with values-->
+        <!-- rules="rows/cols/all/groups/none" it will add line only those which value is present  like it rows present then only : horizontal otherwise col : vertical  -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Roll No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sachin</td>
+                <td>MCA</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Hardik</td>
+                <td>MCA</td>
+                <td>128</td>
+            </tr>
+
+            <!-- Example of rowspan  -->
+            <tr>
+                <td rowspan="3">Hardik</td>
+                <td>Hardik</td>
+                <td>Hardik</td>
+            </tr>
+
+            <tr>
+                <td>VINay</td>
+                <td>VINay</td>
+            </tr>
+            <tr>
+                <td>RowSpan</td>
+                <td>Rowspan</td>
+            </tr>
+            <!-- Example of row span end  -->
+
+            <!-- Example of colspan -->
+            <tr>
+                <td colspan="3">eat 3 column </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">This is the footer part</td>
+            </tr>
+        </tfoot>
+        <!-- colspan end here  -->
+
+    </table>
+</body>
+
+</html>
