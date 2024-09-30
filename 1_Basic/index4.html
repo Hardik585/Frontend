@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* a:visited{
+            color: #000;
+        }
+
+        a:active{
+            color: #d40000;
+        } */
+
+        a:link {
+            color: blue;  /* Unvisited links will be blue */
+        }
+
+        a:visited {
+            color: #000; /* Visited links will be black */
+        }
+
+        a:hover {
+            color: green; /* Hovered links will turn green */
+        }
+
+        a:active {
+            color: red; /* Active (clicked) links will turn red */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Here we are going to learn about anchor tag</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#about">about</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div id="home">
+            <figure>
+                <img width="100px" src="../spider 2.jpg" alt="spider2">
+                <figcaption>Here a spider img is provided </figcaption>
+            </figure>
+        </div>
+
+        <div id="contact">
+            <img width="500px" src="../tiger.jpg" alt="">
+        </div>
+
+        <div id="about">
+
+        </div>
+    </section>
+
+    <section>
+        <h3>we can use download attribute with anchor tag </h3>
+        <a href="" download></a>
+        <a href="" download="name.txt">download btn</a>
+
+        <p>anchor with target attribute (Open into new Tab )</p>
+        <a href="" target="_blank"></a>
+
+        <a href="javaScript.void(0)" onclick="window.open('index3.html' ,'index3' , width=300)">Open new Window </a>
+  <hr>
+        <a href="mailto:hardikkaushik83126@gmial.com">Mail to me </a>
+    </section>
+</body>
+
+</html>
