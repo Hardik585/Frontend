@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Here we are going to learn about Form </h2>
+    <p>Form can have : <strong>TextBox , Button , ListBox , Dropdown , list and many more </strong> </p>
+    <p>Form attribute : <strong>id , name , class , method and some other </strong> </p>
+    <!-- form tag  -->
+    <!-- form can have attribute novalidate . 
+      it given so that developer can give there own validation using js file eg : 
+     <form novalidate> _________</form> -->
+    <form action="">
+        <dl>
+            <dt>Name: </dt>
+            <!-- input tag can have required attribute which force the user to enter value :  -->
+            <!-- attribute : placeholder , name , readonly , disabled , size , value  -->
+            <dd><input required type="text"> </dd>
+
+            <!-- Placeholder ex  -->
+            <dt>PlaceHolder : </dt>
+            <dd><input name="Placeholder Ex" placeholder="ex Placeholder" type="text"> </dd>
+
+            <!-- Readonly -->
+            <dt>ReadOnly Eg :</dt>
+            <dd><input readonly type="text" value="Read Only "> </dd>
+
+            <!-- Disabled Eg :  -->
+            <dt>Disabled : </dt>
+            <dd><input disabled type="text" value="just like readonly appearance Difference"> </dd>
+
+            <!-- Size Eg :  -->
+            <dt>size eg: </dt>
+            <dd><input size="200" type="text"> </dd>
+
+            <!-- Min len and Max Len -->
+            <dt>Min Len and Max len Eg: </dt>
+            <dd><input minlength="4" maxlength="10" type="text" name="Min/Max"></dd>
+
+            <!-- AutoFocus :  -->
+            <dt>Autofocus Eg: </dt>
+            <dd><input autofocus type="text" name="" id=""> </dd>
+
+            <!-- Pattern and title :  -->
+            <!-- The pattern attribute forces the user to input exactly 10 digits.
+                If the input doesn't match the pattern, the form will not be submitted, and the user will see the message provided in the title attribute. -->
+            <dt>Patter Eg : </dt>
+            <dd><input pattern="[0-9]{10}" title="Plz enter only 10 digit " type="text"> </dd>
+
+            <!-- datalist with input using option tag by attribute value : "" -->
+            <dt>DataList with input : </dt>
+            <dd>
+                <input list="topic">
+                <datalist id="topic">
+                    <option value="Html tut"></option>
+                    <option value="Css tut"></option>
+                    <option value="JS tut"></option>
+                </datalist>
+            </dd>
+
+            <!-- Give common name to switch only one  -->
+            <dt>Radio Button 1: </dt>
+            <dd><input type="radio" name="gender"> </dd>
+            <dt>Radio Button 2: </dt>
+            <dd><input type="radio" name="gender"> </dd>
+        </dl>
+    </form>
+</body>
+
+</html>
